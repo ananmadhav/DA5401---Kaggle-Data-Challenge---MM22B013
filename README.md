@@ -32,7 +32,7 @@ This repository contains my complete solution for the DA5401 Data Challenge 2025
 - Focal MSE Loss, AdamW, Cosine Annealing, 5‑Fold CV
 
 ## Results
-Final RMSE: 3.001
+Final RMSE: 2.720
 
 ## Conclusion
 Careful feature engineering + imbalance correction + Siamese architecture significantly improved performance.
