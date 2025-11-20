@@ -4,7 +4,7 @@ Name: Anan madhav T V
 Roll No: MM2B013
 
 
-## 📂 Folder Structure
+## Folder Structure
 ```
 ├── final_kaggle.ipynb          # Main notebook containing the complete solution
 ├── train_data.json             # Training dataset (features + scores)
@@ -16,15 +16,15 @@ Roll No: MM2B013
 
 ---
 
-## ⚙️ How to Run
+## How to Run
 
-### 1️⃣ Environment Setup
+### Environment Setup
 Install dependencies:
 ```bash
 pip install sentence-transformers scikit-learn pandas numpy torch
 ```
 
-### 2️⃣ Data Placement
+### Data Placement
 Ensure the following files are present:
 - train_data.json
 - test_data.json
@@ -33,7 +33,7 @@ Ensure the following files are present:
 
 Update `DATA_DIR` if using a custom directory.
 
-### 3️⃣ Execution
+### Execution
 Run `final_kaggle.ipynb` in Jupyter/Colab/Kaggle.
 The notebook:
 - Preprocesses and embeds text  
@@ -42,7 +42,7 @@ The notebook:
 
 ---
 
-# 📝 Challenge Summary
+# Challenge Summary
 
 Predicting semantic alignment between:
 - A **metric definition**
@@ -52,9 +52,9 @@ The dataset was **heavily imbalanced**, requiring careful augmentation and model
 
 ---
 
-# 🚀 Solution Overview
+# Solution Overview
 
-## 1️⃣ Data Preparation & Feature Engineering
+## Data Preparation & Feature Engineering
 
 ### Text Preprocessing
 Merged texts using:
@@ -83,7 +83,7 @@ To help the model compare distances:
 
 ---
 
-# 2️⃣ Fixing Class Imbalance (Critical)
+# Fixing Class Imbalance (Critical)
 
 ### Issue:
 91% of scores were **9 or 10**, causing models to predict only high values.
@@ -97,7 +97,7 @@ This forces the model to learn what *bad matches* look like.
 
 ---
 
-# 3️⃣ Model Architecture – Two-Tower Siamese Network
+# Model Architecture – Two-Tower Siamese Network
 
 ### Towers
 - **Tower A:** Metric embedding → Dense layers
